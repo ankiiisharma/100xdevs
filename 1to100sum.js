@@ -7,7 +7,7 @@ function SumAll(StartIndex,endIndex){
 }
 
 
-var StartIndex = 1;
+var StartIndex = prompt('Enter Start');
 var endIndex = 100;
 
 var sum = SumAll(StartIndex,endIndex);
