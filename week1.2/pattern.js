@@ -8,8 +8,7 @@ function Fullline(n){
     str = "";
     for(var i=0;i<n;i++){
         str = str + "*";
-    }
-    console.log(str);
+    }    console.log(str);
 }
 
 function Partialline(n){
