@@ -1,4 +1,4 @@
-# 100xDevs Cohort 1 Learning Journey
+# 100xDevs Cohort 2 Learning Journey
 
 ![Cohort Logo](https://d33g7sdvsfd029.cloudfront.net/paid_course3/2023-11-10-0.3523174787735883.jpeg)
 
