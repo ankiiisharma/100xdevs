@@ -2,3 +2,4 @@
 
 - Async Function VS Sync Function.
 - Promises - Introduction
+- Async Await

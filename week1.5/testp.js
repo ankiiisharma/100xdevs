@@ -8,4 +8,4 @@ function CallBack(){
 }
 
 console.log(x);
-x.then(CallBack);
+x.then(CallBack);  
