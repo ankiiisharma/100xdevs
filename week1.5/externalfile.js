@@ -4,7 +4,7 @@ const fs = require("fs");
 
 fs.readFile("./week1.5/file.txt", "utf-8",function(err, data){
     if(err){
-        console.log(err);
+        alert.log("error");
     }
     else{
         console.log(data);
