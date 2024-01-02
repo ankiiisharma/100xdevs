@@ -8,4 +8,4 @@ promise
 	})
 	.catch(function (errorMessage) {
 		console.log(errorMessage);
-	});
+});

@@ -1,9 +1,18 @@
 const express = require("express");
+const app = express()
 const port = 3000
-const app = express();
 
-app.get('/', function( req, res){
-    res.send('hello world')
+app.get("/xyz", function(req, res) {
+    res.json({
+        name: "Ankit",
+        age: 21
+    })
+})
+
+app.get('/', ( req, res) =>{.
+
+    res.send( '<b> Hello There! <b>' )
+    
 })
 
 // app.listen(port, function(){
@@ -11,4 +20,6 @@ app.get('/', function( req, res){
 // }) 
 
 
-app.listen(port); 
+app.listen(port, () => {
+    console.log(`Exampe app islisteing at port ${port}`)
+})
