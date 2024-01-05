@@ -9,9 +9,17 @@ app.get("/xyz", function(req, res) {
     })
 })
 
-app.get('/', ( req, res) =>{.
 
-    res.send( '<b> Hello There! <b>' )
+app.post('/coversations', (req, res) => {
+    console.log(req.headers["authorization"])
+    res.send({
+        msg: "2 + 2 = 4" 
+    })
+})
+
+app.get('/', ( req, res) =>{
+
+    res.send( '<b> hello JavaScript! <b>' )
     
 })
 
