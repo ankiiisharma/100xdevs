@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repository documents my learning journey during the 100xDevs Cohort 1 by @hkirat. Here, I'll be pushing code, notes, and projects related to the skills and concepts I acquire throughout the program.
+This repository documents my learning journey during the 100xDevs Cohort 2 by @hkirat. Here, I'll be pushing code, notes, and projects related to the skills and concepts I acquire throughout the program.
 
 
 ## Conclusion
