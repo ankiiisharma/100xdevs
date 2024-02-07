@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 # 100xDevs Cohort 2
+=======
+# 100xDevs Cohort 2 Learning Journey
+
+![Cohort Logo](https://d33g7sdvsfd029.cloudfront.net/paid_course3/2023-11-10-0.3523174787735883.jpeg)
+
+## Introduction
+
+This repository documents my learning journey during the 100xDevs Cohort 2 by @hkirat.
+>>>>>>> 10aafcc07de7033d277c3e57200b019d986c4168
 
 
 ## Week 1: Introduction to JavaScript
