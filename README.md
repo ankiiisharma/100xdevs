@@ -19,3 +19,6 @@
 - Basic authentication methods
 - Introduction to MongoDB, a popular database
 
+## Week 4: DOM, Dynamic Frontends
+- Document Object Model
+- 
