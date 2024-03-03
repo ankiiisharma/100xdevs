@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <input id="title" type="text" placeholder="title"> <br>
+        <input id="description" type="text" placeholder="description"><br><br>
+        <button onclick="addTodo()"> add todo</button> <br>
+
+        <div id="todos">
+          <!-- <h1>test</h1> --> 
+        </div>
+        <script>
+
+            let globalID = 1;
+            let todoState = [];
+            let oldtodoState = [];
+ 
+            function removeTodo(todo){
+                const element = document.getElementById(todo.id);
+                element.parent.removeChild(element);
+            }
+
+            function updateTodo(oldTodo, newTodo){
+                const element = document.getElementById(oldTodo.id);
+                element.children[0].innerHTML = newTodo.title;
+                element.children[0].innerHTML = newTodo.description;
+                element.children[0].innerHTML = newTodo.completed ? "mark as done" : "done";
+              }
+
+            function updateState(newTodo){
+                const added = [];
+                const deleted = [];
+                const updated = [];
+
+                oldtodoState = newTodo;
+            }
+
+            function addTodo(){
+                const title = document.getElementById("title").value;
+                const description = document.getElementById("description").value;
+
+                todoState.push({
+                    title: title,
+                    description: description,
+                    id : globalID++,
+                })
+                updateState(todoState);
+            }
+
+
+        </script>
+    </body>
+</html>
