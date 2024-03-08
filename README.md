@@ -22,3 +22,5 @@
 ## Week 4: DOM, Dynamic Frontends
 - Document Object Model
 - Basics of React
+- Mongo DB deep dive
+- Assignments
