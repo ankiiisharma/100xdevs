@@ -10,6 +10,11 @@ function App() {
     title : "learn DSA",
     description : "learn DSA at 10",
     status : false
+  },
+  {
+    title : "learn DSA",
+    description : "learn DSA at 10",
+    status : false
   }
 ])
 
