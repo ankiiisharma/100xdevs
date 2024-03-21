@@ -24,3 +24,8 @@
 - Basics of React
 - Mongo DB deep dive
 - Assignments
+
+## Week 5: React
+- React State & Components
+- React Deep Dive
+- Basic todo app with React

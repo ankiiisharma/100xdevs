@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export function CreateTodo(){
 
 
@@ -18,6 +17,7 @@ export function CreateTodo(){
             const value = e.target.value;
             setDescription(e.target.value);
         }}></input> <br />
+
 
         <button style={{padding: 10, margin:10}} onClick={()=>{
         fetch("http://localhost:3008/todo", {
