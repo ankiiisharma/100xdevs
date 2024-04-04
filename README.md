@@ -20,12 +20,22 @@
 - Introduction to MongoDB, a popular database
 
 ## Week 4: DOM, Dynamic Frontends
+
 - Document Object Model
 - Basics of React
 - Mongo DB deep dive
 - Assignments
 
 ## Week 5: React
+
 - React State & Components
 - React Deep Dive
 - Basic todo app with React
+
+## Week 6: React Deep Dive
+
+- React Return, Re rendering, Keys, Wrapper.
+
+## Week 7: React Routing etc.
+
+- Routing

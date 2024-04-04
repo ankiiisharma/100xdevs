@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 
-// import React, { Suspense } from "react";
-// import { lazy } from "react";
-// import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-// // import Dashboard from "./components/Dashboard";
-// // import Landing from "./components/Landing";
+import React, { Suspense } from "react";
+import { lazy } from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { CountContext } from "./contexts/context";
+// import Dashboard from "./components/Dashboard";
+// import Landing from "./components/Landing";
 
 // const Dashboard = React.lazy(() => import("./components/Dashboard"));
 // const Landing = React.lazy(() => import("./components/Landing"));
@@ -68,23 +69,48 @@ import { useState } from "react";
 
 // export default App;
 
-
-
 function App() {
-
   const [count, setCount] = useState(0);
 
   return (
-   
+    <CountContext.Provider value={count}>
+      <CountRenderer count={count} />
+      <Button count={count} setCount={setCount} />
+    </CountContext.Provider>
   );
 }
 
-function count(){
-
+function CountRenderer({ count }) {
+  return (
+    <>
+      <div>{count}</div>
+    </>
+  );
 }
 
-function button(){
-
+function Count({ count }) {
+  console.log(count);
+  return <div>{count}</div>;
 }
 
+function Button({ count, setCount }) {
+  return (
+    <>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        Increase
+      </button>
+      <button
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        Decrease
+      </button>
+    </>
+  );
+}
 export default App;

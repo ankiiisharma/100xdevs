@@ -2,53 +2,55 @@
 // import { useState } from "react";
 // import "./App.css";
 
+import { useEffect, useState } from "react";
+
 // // function App() {
 // //   return (
 // //     <div>
 // //       <HeaderWithButton></HeaderWithButton>
-// //       <Header title="test4"></Header>
-// //       <Header title="test2"></Header>
-// //       <Header title="test5"></Header>
-// //       <Header title="test8"></Header>
-// //       <Header title="test8"></Header>
+// //       <Header todo="test4"></Header>
+// //       <Header todo="test2"></Header>
+// //       <Header todo="test5"></Header>
+// //       <Header todo="test8"></Header>
+// //       <Header todo="test8"></Header>
 // //     </div>
 // //   );
 // // }
 
 // // function HeaderWithButton() {
-// //   const [title, setTitle] = useState("My name is Ankit");
+// //   const [todo, settodo] = useState("My name is Ankit");
 
-// //   function updateTitle() {
-// //     setTitle("My name is " + Math.random());
+// //   function updatetodo() {
+// //     settodo("My name is " + Math.random());
 // //   }
 
 // //   return (
 // //     <div>
-// //       <button onClick={updateTitle}> update title</button>
-// //       <Header title={title}></Header>
+// //       <button onClick={updatetodo}> update todo</button>
+// //       <Header todo={todo}></Header>
 // //     </div>
 // //   );
 // // }
 
-// // const Header = React.memo(function Header({ title }) {
-// //   return <div>{title}</div>;
+// // const Header = React.memo(function Header({ todo }) {
+// //   return <div>{todo}</div>;
 // // });
 
 // function App() {
 //   const [todos, Settodos] = useState([
 //     {
 //       id: 1,
-//       title: "GOOOOO",
+//       todo: "GOOOOO",
 //       description: "testttsts1",
 //     },
 //     {
 //       id: 2,
-//       title: "G222222222",
+//       todo: "G222222222",
 //       description: "test22222",
 //     },
 //     {
 //       id: 3,
-//       title: "G333333",
+//       todo: "G333333",
 //       description: "tes3333333",
 //     },
 //   ]);
@@ -58,7 +60,7 @@
 //       ...todos,
 //       {
 //         id: 4,
-//         title: Math.random(),
+//         todo: Math.random(),
 //         description: Math.random(),
 //       },
 //     ]);
@@ -68,16 +70,16 @@
 //     <div>
 //       <button onClick={addTodo}> add a todo. </button>
 //       {todos.map((todo) => (
-//         <Todo title={todo.title} description={todo.description} />
+//         <Todo todo={todo.todo} description={todo.description} />
 //       ))}
 //     </div>
 //   );
 // }
 
-// function Todo({ title, description }) {
+// function Todo({ todo, description }) {
 //   return (
 //     <div>
-//       <h1> {title}</h1>
+//       <h1> {todo}</h1>
 //       <h3> {description} </h3>
 //     </div>
 //   );
@@ -120,18 +122,60 @@
 
 // export default App;
 
+// function App() {
+//   return (
+//     <div>
+//       <CardWrapper>
+//         <TextComponent />
+//       </CardWrapper>
+
+//       <CardWrapper>
+//         <div>hi there</div>
+//       </CardWrapper>
+//     </div>
+//   );
+// }
+
+// function CardWrapper({ children }) {
+//   console.log(children);
+//   return (
+//     <div style={{ border: "2px solid black", padding: 20 }}>{children}</div>
+//   );
+// }
+
+// function TextComponent() {
+//   return <div>hi from text component.</div>;
+// }
+
+// export default App;
+
 function App() {
+  const [todos, setTodos] = useState([{}]);
+
+  useEffect(() => {
+    setInterval(() => {
+      fetch("https://dummyjson.com/todos").then(async function (res) {
+        const json = await res.json();
+        setTodos(json.todos);
+      });
+    }, 10000);
+  }, []);
+
   return (
     <div>
-      <CardWrapper>hi there.</CardWrapper>
+      {todos.map((todo) => (
+        <Todo key={todo.id} todo={todo.todo} description={todo.decription} />
+      ))}
     </div>
   );
 }
 
-function CardWrapper({ children }) {
-  console.log(children);
+function Todo({ todo, decription }) {
   return (
-    <div style={{ border: "2px solid black", padding: 20 }}>{children}</div>
+    <div>
+      <h2>{todo}</h2>
+      <h4> {decription}</h4>
+    </div>
   );
 }
 
