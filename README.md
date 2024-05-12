@@ -39,3 +39,10 @@
 ## Week 7: React Routing etc.
 
 - Routing
+
+## Week 8 : Tailwind
+- Tailwind CSS
+- Paytm Clone (yet to do)
+
+## Week 9 : Custom Hooks
+- Custom Hooks
