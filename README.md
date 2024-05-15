@@ -41,8 +41,13 @@
 - Routing
 
 ## Week 8 : Tailwind
+
 - Tailwind CSS
 - Paytm Clone (yet to do)
 
 ## Week 9 : Custom Hooks
-- Custom Hooks
+
+- Hooks, Custom Hooks
+- Data Fetching Hooks
+- Browser functionality related hooks.
+- Performance / Time based hooks
