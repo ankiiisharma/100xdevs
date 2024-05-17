@@ -51,3 +51,4 @@
 - Data Fetching Hooks
 - Browser functionality related hooks.
 - Performance / Time based hooks
+- Introduction to TypeScript.
