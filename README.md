@@ -52,3 +52,8 @@
 - Browser functionality related hooks.
 - Performance / Time based hooks
 - Introduction to TypeScript.
+- Typescript
+
+## Week 10 : Postgres SQL
+- SQL vs NoSQL.
+- Intro to Postgres SQL. (Neon DB)
