@@ -57,3 +57,7 @@
 ## Week 10 : Postgres SQL
 - SQL vs NoSQL.
 - Intro to Postgres SQL. (Neon DB)
+- CRUD using Postgres
+
+## Week 11 : Serverless Architecture
+- Introduction to Serverless Architecture
