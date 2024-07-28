@@ -64,3 +64,6 @@
 
 - Introduction to Serverless Architecture
 - Hono : routing and middlewares
+- Deploying Backend on AWS
+- Intro & overview to Nginx
+
