@@ -67,3 +67,10 @@
 - Deploying Backend on AWS
 - Intro & overview to Nginx
 
+## Week 12 : AWS, 
+
+- Deploying fronted with AWS
+- S3
+- CloudFront
+
+
