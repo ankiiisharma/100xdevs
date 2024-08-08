@@ -72,5 +72,5 @@
 - Deploying fronted with AWS
 - S3
 - CloudFront
-
-
+- **Week 12.2:**
+- Typescript APIs
