@@ -67,10 +67,12 @@
 - Deploying Backend on AWS
 - Intro & overview to Nginx
 
-## Week 12 : AWS, 
+## Week 12 : AWS, TypeScript Deep, Docker, Offline Videos
 
 - Deploying fronted with AWS
 - S3
 - CloudFront
-- **Week 12.2:**
 - Typescript APIs
+- Docker Intro
+- SQL Relationships
+- Prisma relationships [yet to do]!
