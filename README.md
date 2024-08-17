@@ -76,3 +76,11 @@
 - Docker Intro
 - SQL Relationships
 - Prisma relationships [yet to do]!
+
+## Week 13 : Medium Project
+
+- [will push soon..]
+
+## Week 14 : Next Js
+
+- Intro to Client Side Next JS
