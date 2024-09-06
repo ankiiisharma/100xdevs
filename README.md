@@ -84,3 +84,9 @@
 ## Week 14 : Next Js
 
 - Intro to Client Side Next JS
+- Server Side Next Js
+
+## Week 15 : Docker
+
+- Images vs Containers
+- Docker commands
