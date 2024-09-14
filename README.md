@@ -90,3 +90,7 @@
 
 - Images vs Containers
 - Docker commands
+- Layers
+- Volumes
+- Network
+
