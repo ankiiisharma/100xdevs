@@ -79,7 +79,8 @@
 
 ## Week 13 : Medium Project
 
-- [will push soon..]
+- CloudFlare Workers
+- Hono, JWT, Zod revised
 
 ## Week 14 : Next Js
 
