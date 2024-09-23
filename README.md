@@ -94,4 +94,7 @@
 - Layers
 - Volumes
 - Network
+- Docker Push
+- Docker Compose
+
 

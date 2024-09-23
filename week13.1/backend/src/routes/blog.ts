@@ -23,6 +23,7 @@ blogRouter.use('/*', async (c, next) => {
         const user = await verify(token, c.env.JWT_SECRET);
         console.log("Verified User:", user);
         if (user && user.id) {
+            //@ts-ignore
             c.set('userId', user.id);
             await next();
         } else {
