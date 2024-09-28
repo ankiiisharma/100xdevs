@@ -2,10 +2,11 @@
 
 <div align="center">
   <br />
-    <a href="https://www.youtube.com/watch?v=FkowOdMjvYo" target="_blank">
-      <img src="https://github.com/sujatagunale/EasyRead/assets/151519281/65ff8e7a-9167-4761-bb89-59b6b3ba8307" alt="Project Banner">
+    <a href="https://github.com/ankiiisharma/100xdevs" target="_blank">
+      <img src="https://ik.imagekit.io/ankiiisharma/github100xDevs.png?updatedAt=1727534213432" alt="100xDevs">
     </a>
   <br />
+</div>
 
 ## Week 1: Introduction to JavaScript
 
