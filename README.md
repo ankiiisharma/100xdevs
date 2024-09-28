@@ -1,5 +1,12 @@
 # 100xDevs Cohort 2
 
+<div align="center">
+  <br />
+    <a href="https://www.youtube.com/watch?v=FkowOdMjvYo" target="_blank">
+      <img src="https://github.com/sujatagunale/EasyRead/assets/151519281/65ff8e7a-9167-4761-bb89-59b6b3ba8307" alt="Project Banner">
+    </a>
+  <br />
+
 ## Week 1: Introduction to JavaScript
 
 - Basic JavaScript concepts

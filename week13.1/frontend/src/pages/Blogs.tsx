@@ -1,41 +1,55 @@
-import BlogCard from '../components/BlogCard'
-import Navbar from '../components/Navbar'
-const {loading, blogs} from "use  "
+import React from "react";
+import BlogCard from "../components/BlogCard";
+import Navbar from "../components/Navbar";
+import { useBlogs } from "../hooks";
+import BlogSkeleton from "../components/BlogSkeleton";
 
-const Blogs = () => {
+const Blogs: React.FC = () => {
+  const { loading, blogs = [], error } = useBlogs();
 
+  if (loading) {
+    return(
+      <> 
+        <div className="flex justify-center"> 
+            <div> 
+            <BlogSkeleton />
+            <BlogSkeleton />
+            <BlogSkeleton />
+            </div> 
+        </div>
+      </>
+    )
+  }
+
+  if (error) {
+    return <h1 className="text-xl text-red-500">Error loading blogs: {error.message}</h1>;
+  }
 
   return (
-    <>  
-     <Navbar  />
-     <div className='flex justify-center'>
-     <div className='max-w-xs sm:max-w-md  md:max-w-xl'> 
-        <BlogCard
-            authorName={"Ankit Sharma"}
-            title={"How to do this when you dont have to go for the race and dies"}
-            content={`well people dies i the middle of the race and they find thing dt ot be very fornal and then they have to run in the race where they can win. but trust yor instints and jump into the race there might be chnaces that you eill fail. but there are chnaagses thsata you will win. and that day the things will chnage foreverdfor you .and you will be the perosn you wanted to be`}
-            publishedDate={"05 Sept. 2024"}
-            imageUrl={"https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/ce405ad07404fecfb3196b77822aec8b.jpg"}
-        />
-        <BlogCard
-            authorName={"Ankit Sharma"}
-            title={"How to do this when you dont have to go for the race and dies"}
-            content={`well people dies i the middle of the race and they find thing dt ot be very fornal and then they have to run in the race where they can win. but trust yor instints and jump into the race there might be chnaces that you eill fail. but there are chnaagses thsata you will win. and that day the things will chnage foreverdfor you .and you will be the perosn you wanted to be`}
-            publishedDate={"05 Sept. 2024"}
-            imageUrl={"https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/ce405ad07404fecfb3196b77822aec8b.jpg"}
-        />
-        <BlogCard
-            authorName={"Ankit Sharma"}
-            title={"How to do this when you dont have to go for the race and dies"}
-            content={`well people dies i the middle of the race and they find thing dt ot be very fornal and then they have to run in the race where they can win. but trust yor instints and jump into the race there might be chnaces that you eill fail. but there are chnaagses thsata you will win. and that day the things will chnage foreverdfor you .and you will be the perosn you wanted to be`}
-            publishedDate={"05 Sept. 2024"}
-            imageUrl={"https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/ce405ad07404fecfb3196b77822aec8b.jpg"}
-        />
-    </div>
-     </div>
+    <>
+      <Navbar />
+      <div className="flex justify-center">
+        <div className="max-w-xs sm:max-w-md md:max-w-xl">
+          {blogs.length === 0 ? (
+            <p>No blogs available</p>
+          ) : (
+            blogs.map((blog) => (
+              <BlogCard
+                key={blog.id}
+                id={blog.id}
+                authorName={blog.author?.name || "Unknown Author"}
+                title={blog.title || "Untitled Blog"}
+                content={blog.content || "No content available"}
+                publishedDate={blog.publishedDate || "23 Sept 2024"}
+                imageUrl={blog.imageUrl || "https://c4.wallpaperflare.com/wallpaper/237/293/295/3-316-16-9-aspect-ratio-s-sfw-wallpaper-preview.jpg"}
+                author={blog.author}
+              />
+            ))
+          )}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-
-export default Blogs
+export default Blogs;

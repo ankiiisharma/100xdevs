@@ -51,6 +51,8 @@ blogRouter.post('/', async (c) => {
         }
 
         const authorId = c.get('userId');
+        console.log(authorId);
+
         const prisma = new PrismaClient({
             datasourceUrl: c.env.DATABASE_URL,
         }).$extends(withAccelerate())
@@ -110,23 +112,39 @@ blogRouter.put('/', async (c) => {
 
 //pagination add
 blogRouter.get('/bulk', async (c) => {
-    const body = await c.req.json();
-
     const prisma = new PrismaClient({
         datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate())
 
-    const posts = await prisma.post.findMany();
+    try {
+        const posts = await prisma.post.findMany({
+            select: {
+                title: true,
+                content: true,
+                id: true,
+                author: {
+                    select: {
+                        name: true
+                    }
+                }
+            }
+        });
 
-    return c.json({
-        posts
-    })
+        return c.json({
+            posts
+        })
+
+        console.log(posts)
+
+    } catch (error) {
+        console.error('Error fetching posts:', error);
+        return c.json({ error: 'Internal Server Error' }, 500);
+    }
 })
 
 
 blogRouter.get('/:id', async (c) => {
     const id = c.req.param("id");
-    const body = await c.req.json();
 
     const prisma = new PrismaClient({
         datasourceUrl: c.env.DATABASE_URL,
@@ -137,7 +155,17 @@ blogRouter.get('/:id', async (c) => {
             where: {
                 id: id,
             },
+            select: {
+                title: true,
+                content: true,
+                author: {
+                    select: {
+                        name: true
+                    }
+                }
+            }
         })
+
         return c.json({
             post
         })
