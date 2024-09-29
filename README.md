@@ -1,4 +1,4 @@
-# 100xDevs Cohort 2
+<h1 align="center"> 100xDevs Cohort 2 </h1>
 
 <div align="center">
   <br />
@@ -105,4 +105,7 @@
 - Docker Push
 - Docker Compose
 
+## Week 16 : Monorepos
 
+- Intro to Monorepos
+- TurboRepo & setup turborepo
