@@ -109,3 +109,5 @@
 
 - Intro to Monorepos
 - TurboRepo & setup turborepo
+- NextAuth
+- Cookies
