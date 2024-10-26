@@ -111,3 +111,14 @@
 - TurboRepo & setup turborepo
 - NextAuth
 - Cookies
+
+## Week 17 : PayTM Project
+
+- working..
+
+## Week 18 : Paytm project, CI/CD
+
+- Client Side Rendering
+- Server Side Rendering
+- CI/CD
+
