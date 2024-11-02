@@ -1,3 +1,4 @@
+
 <h1 align="center"> 100xDevs Cohort 2 </h1>
 
 <div align="center">
@@ -118,7 +119,11 @@
 
 ## Week 18 : Paytm project, CI/CD
 
+- Paytm Project(..)
+- CI/CD
+
+## Week 19 : CSR,SSR,SSG
 - Client Side Rendering
 - Server Side Rendering
-- CI/CD
+- Static Site Generation
 
