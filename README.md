@@ -122,8 +122,7 @@
 - Paytm Project(..)
 - CI/CD
 
-## Week 19 : CSR,SSR,SSG
-- Client Side Rendering
-- Server Side Rendering
-- Static Site Generation
+## Week 19 : Middlewares, CSR,SSR,SSG
+- Middlewares in Next Js
+- CSR,SSR,SSG
 
