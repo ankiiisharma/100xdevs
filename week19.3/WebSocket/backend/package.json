@@ -1,0 +1,19 @@
+{
+  "name": "week19.3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/ws": "^8.5.13",
+    "express": "^4.21.1",
+    "websocket": "^1.0.35",
+    "ws": "^8.18.0"
+  }
+}
