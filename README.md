@@ -126,3 +126,4 @@
 - Middlewares in Next Js
 - CSR,SSR,SSG
 - Websocket
+- Redis Intro
